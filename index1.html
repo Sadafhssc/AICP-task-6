@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username"/>
+            <input type="password" id="login-password" placeholder="Password"/>
+            <div class="links">
+            <a href="index.html" onclick="login()" class="button-link">Login</a>
+           <a href="#" onclick="showSignUpScreen()" class="button-link">Sign Up</a></div>
+            <p>By creating an account, you agree on our terms</p>
+        </div>
+    
+        <!-- Sign Up Screen -->
+        <div id="signup-screen" class="screen hidden">
+            <h2>Sign Up</h2> 
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            
+            <select id="signup-role">
+                <option value="admin">Admin</option>
+                <option value="teacher">Recruiter</option>
+            </select>
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="showLoginScreen()">Login</button>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
